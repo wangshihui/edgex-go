@@ -35,7 +35,8 @@ mac:
 brew install zeromq
 ```
 
-## windows下安装 zeromq的动态库
+## windows下安装 zeromq的动态库 
+翻译自  [ZMQWindows](https://github.com/edgexfoundry/edgex-go/blob/master/ZMQWindows.md)
 
 解决zeroMq动态库的安装问题,即可开始在windows下编译运行edgex的源码.
 
@@ -62,6 +63,9 @@ brew install zeromq
   ```shell
   C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe:cannot find -lzmq
   ```
+>注意zero mq的4.3.3 版本不能在win10上运行, 在win10上推荐用4.3.2
+
+
 5.  下载zeromq源码
   
   ```shell
