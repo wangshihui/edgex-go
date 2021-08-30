@@ -42,8 +42,8 @@ brew install zeromq
 
 1. 从github上下载edgex源码到本地. edgex已经支持go的模块化. 所以可以下载源码到本地的任意位置
 
-2. 下载下载安装 TDM-GCC, http://tdm-gcc.tdragon.net/download.  安装完成后,在 tdm-gcc的安装目录中的bin文件内找到
-  `mingw32-make.exe` copy一份修改为 `make.exe`
+2. 下载下载安装 TDM-GCC, http://tdm-gcc.tdragon.net/download. 
+   
 3. 执行命令 `go get -v -x github.com/pebbe/zmq4`
   
   如果没有安装zero MQ 则会有一个可以预见的失败
@@ -120,5 +120,8 @@ windows 动态库位置
 
 如果运行报错, 那么 `$Env:GOCACHE="off"` 重新找一个合适版本的zeroMq的lib 步骤4-8
 
+10. 如果考虑使用edgex 提供的Makerfile脚本, 可以考虑下载个git bash,在git bash中执行make (command name).
+    
+    在tdm-gcc的安装目录中的bin文件内找到 `mingw32-make.exe` copy一份修改为 `make.exe`.
 
 [win10下测试可用的zeroMq](lib-zeromq-win)
