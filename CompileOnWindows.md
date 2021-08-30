@@ -104,7 +104,11 @@ not finding zmq.h from auth.go
 
 8. 准备
 
-如果编译成功, 那么应该有一个构建产物`core-data.exe`.在步骤4中解压缩提取到的文件 中找到`libsodium.dll` 和 `libzmq-v120-mt-4_x_x.dll`, 病拷贝到到 `exe` 文件所在的目录
+如果编译成功, 那么应该有一个构建产物`core-data.exe`.在步骤4中解压缩提取到的文件 中找到`libsodium.dll` 和 `libzmq-v120-mt-4_x_x.dll`拷贝到到 `exe` 文件所在的目录
+
+因为edgex有多个微服务模块,每个微服务模块的构建产物都是一个`exe`文件,且在不同位置, 所以可以考虑将这两个`dll`文件放到系统的lib目录下.
+windows 动态库位置
+> C:\Windows\System32
 
 9. 执行
 
