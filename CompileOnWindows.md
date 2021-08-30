@@ -113,3 +113,4 @@ not finding zmq.h from auth.go
 如果运行报错, 那么 `$Env:GOCACHE="off"` 重新找一个合适版本的zeroMq的lib 步骤4-8
 
 
+[win10下测试可用的zeroMq](lib-zeromq-win)
